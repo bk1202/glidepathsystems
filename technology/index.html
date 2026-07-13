@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Technology — Glidepath Systems</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrap nav-shell">
+  <nav>
+    <a href="index.html" class="logo"><span class="dot"></span>Glidepath Systems</a>
+    <div class="nav-links">
+      <a href="product.html">Product</a>
+      <a href="technology.html" class="active">Technology</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a class="pill-btn" href="contact.html">Get in touch</a>
+  </nav>
+</div>
+
+<div class="wrap">
+  <section style="padding-top:56px;">
+    <div class="section-head">
+      <div class="eyebrow">How it's built</div>
+      <h2>The interesting part isn't the display. It's the data.</h2>
+    </div>
+    <div class="icon-row">
+      <div class="icon-item">
+        <div class="icon-badge mono">01</div>
+        <h3>Schedule + live delay join</h3>
+        <p>TransLink retired their old stop-estimates API. The current feed only gives delays per trip, so we built the join against the static GTFS schedule ourselves.</p>
+      </div>
+      <div class="icon-item">
+        <div class="icon-badge mono">02</div>
+        <h3>Quota-safe caching</h3>
+        <p>TransLink's API caps out at 1,000 requests a day. A backend polls once and caches it, so any number of screens can read from one shared fetch.</p>
+      </div>
+      <div class="icon-item">
+        <div class="icon-badge mono">03</div>
+        <h3>Runs in any browser</h3>
+        <p>No app, no install. The display is a static page that polls the backend and refreshes on its own.</p>
+      </div>
+      <div class="icon-item">
+        <div class="icon-badge mono">04</div>
+        <h3>Where it stands now</h3>
+        <p>Working prototype, tested against real TransLink data. A deployable product for real installs is next.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="f-logo">Glidepath Systems</div>
+    <span>Vancouver, BC</span>
+    <a href="contact.html">Get in touch</a>
+  </div>
+</footer>
+
+</body>
+</html>
